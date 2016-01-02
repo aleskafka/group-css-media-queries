@@ -36,7 +36,6 @@
     "mocha": "^2.0.1"
   },
   "scripts": {
-    "prepublish": "./node_modules/.bin/coffee -c index.coffee",
-    "test": "./node_modules/.bin/mocha --compilers coffee:coffee-script/register"
+    "test": "./node_modules/.bin/mocha"
   }
 }
