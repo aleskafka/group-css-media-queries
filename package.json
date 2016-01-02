@@ -10,13 +10,19 @@
     "postprocessor"
   ],
   "license": "MIT",
-  "author": {
+  "author": [{
+    "name": "Ales Kafka",
+    "email": "ales.kafka@gmail.com"
+  }, {
     "name": "Ivan Kravchenko",
     "email": "i@se7ensky.com"
-  },
+  }, {
+    "name": "Valentin Agachi",
+    "url": "https://agachi.name"
+  }],
   "repository": {
     "type": "git",
-    "url": "https://github.com/Se7enSky/group-css-media-queries.git"
+    "url": "https://github.com/aleskafka/group-css-media-queries.git"
   },
   "version": "1.1.1",
   "main": "index",
@@ -25,7 +31,9 @@
   },
   "dependencies": {
     "css-parse": "*",
-    "css-stringify": "*"
+    "css-stringify": "*",
+    "through2": "~2.0.0",
+    "gulp-util": "~3.0.6"
   },
   "engines": {
     "node": ">=0.8.0"
