@@ -35,8 +35,8 @@ function buildMedias(rules) {
 }
 
 function parseWidth(media, str) {
-  var m = media.match(new RegExp(str + ":\\s*([0-9\.]+)px"));
-  return m ? parseInt(m[1], 10) : 0;
+  var m = media.match(new RegExp(str + ":\\s*([0-9\.]+)(px|em)"));
+  return m ? parseInt(m[1], 10)*(m[2]==='em' ? 16 : 1) : 0;
 }
 
 function sortMedia(medias, minWidth, maxWidth, sortFn) {
