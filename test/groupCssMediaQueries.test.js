@@ -18,7 +18,7 @@ describe('groupCssMediaQueries', function() {
 			var input = fs.readFileSync(fixturesPath + '/' + inputFilename, {encoding: 'utf8'});
 			var output = fs.readFileSync(fixturesPath + '/' + outputFilename, {encoding: 'utf8'});
 
-			return groupCssMediaQueries(input).should.eql(output);
+			return groupCssMediaQueries(input.trim()).should.eql(output.trim());
 		});
 	}
 
